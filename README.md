@@ -27,7 +27,7 @@ sub function for <strong>save_state</strong>.
 ### LEF.cpp
 
 #### constructor
-Although the article LEFs bind at random sight at the begining of simulation, this constractor place LEFs at equal intervals on strand.
+Although in the article LEFs bind at random sight at the begining of simulation, this constractor place LEFs at equal intervals on strand.
 
 #### update
 While time gose by dt, <strong>head*_progress</strong> get minute values. if <strong>head*_progress</strong> are more than 1, the LEF heads move and the variables go to 0. 
