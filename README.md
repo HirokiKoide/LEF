@@ -5,8 +5,6 @@ These codes are an implementation of "Chromosome Compaction by Active Loop Extus
 
 ## LEF.hpp
 
-definition of the interface of the set of LEF.
-
 ### public
 <strong>save_state(std::ofstream&)</strong> is writing all LEFs as a semicircle into ofs.
 
@@ -26,8 +24,6 @@ if LEF is at the strand index n, is_occupied[n] is true.
 sub function for <strong>save_state</strong>.
 
 ### LEF.cpp
-
-implemention of LEFs class.
 
 #### constructor
 Although the article LEFs bind at random sight at the begining of simulation, this constractor place LEFs at equal intervals on strand.
