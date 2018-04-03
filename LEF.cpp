@@ -91,11 +91,11 @@ void LEFs::update(){
             } else {
                 LEF_ary[idx].head1_progress = 0;
                 LEF_ary[idx].head2_progress = 0;
-                std::uniform_int_distribution<> rand_rebind_sight
+                std::uniform_int_distribution<> rand_rebind_sight_index
                                                 (0,can_rebind.size()-1);
-                size_t rebind_sight = rand_rebind_sight(mt);
-                LEF_ary[idx].head1 = can_rebind[rebind_sight];
-                LEF_ary[idx].head2 = can_rebind[rebind_sight]+1;
+                size_t rebind_sight_index = rand_rebind_sight_index(mt);
+                LEF_ary[idx].head1 = can_rebind[rebind_sight_index];
+                LEF_ary[idx].head2 = can_rebind[rebind_sight_index]+1;
                 is_occupied[LEF_ary[idx].head1] = true;
                 is_occupied[LEF_ary[idx].head2] = true;
             }
