@@ -24,7 +24,7 @@ if LEF is at the strand index n, is_occupied[n] is true.
 #### make_circle
 sub function for <strong>save_state</strong>.
 
-### LEF.cpp
+## LEF.cpp
 
 #### constructor
 Although in the article LEFs bind at random sight at the begining of simulation, this constractor place LEFs at equal intervals on strand.
@@ -33,5 +33,5 @@ Although in the article LEFs bind at random sight at the begining of simulation,
 While time gose by dt, <strong>head*_progress</strong> get minute values. if <strong>head*_progress</strong> are more than 1, the LEF heads move and the variables go to 0. 
 LEF dissociate at a rate of 1/tau and immediately rebind at random singht.
 
-### main.cpp
+## main.cpp
 The simulation runs for 10 tau and makes 10,000 datafiles.
