@@ -7,6 +7,11 @@ These codes are an implementation of "Chromosome Compaction by Active Loop Extus
 
 definition of the interface of the set of LEF.
 
-### internal class LEF
+### public
+<strong>save_state(std::ofstream&)</storng> is writing all LEFs as a semicircle into ofs.
 
-This class have three public member characteriaing LEF.<strong>average_velocity</strong>
+### private
+
+#### internal class LEF
+
+This class charactrize LEF. <strong>tau</storng> is dssociation constant. <strong>head*_progress</strong> is used to determine whether or not to move LEF head (if this veriable is more than 1, the head moves and the veriable go to 0).
