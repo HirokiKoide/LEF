@@ -14,10 +14,27 @@ definition of the interface of the set of LEF.
 
 #### internal class LEF
 
-This class charactrize LEF. <strong>tau</strong> is dssociation constant. <strong>head*_progress</strong> is used to determine whether or not to move LEF head (if this veriable is more than 1, the head moves and the veriable go to 0).
+This class charactrize LEF. <strong>tau</strong> is dssociation constant. <strong>head*_progress</strong> are used to determine whether or not to move LEF heads (if this veriables are more than 1, the heads move and the veriables go to 0).
 
 #### monomer_num
 determine the length of strand.
 
 #### is_occupied
 if LEF is at the strand index n, is_occupied[n] is true.
+
+#### make_circle
+sub function for <strong>save_state</strong>.
+
+### LEF.cpp
+
+implemention of LEFs class.
+
+#### constructor
+Although the article LEFs bind at random sight at the begining of simulation, this constractor place LEFs at equal intervals on strand.
+
+#### update
+While time gose by dt, <strong>head*_progress</strong> get minute values. if <strong>head*_progress</strong> are more than 1, the LEF heads move and the variables go to 0. 
+LEF dissociate at a rate of 1/tau and immediately rebind at random singht.
+
+### main.cpp
+The simulation runs for 10 tau and makes 10,000 datafiles.
