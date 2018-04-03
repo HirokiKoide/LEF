@@ -8,7 +8,7 @@ These codes are an implementation of "Chromosome Compaction by Active Loop Extus
 definition of the interface of the set of LEF.
 
 ### public
-<strong>save_state(std::ofstream&)</storng> is writing all LEFs as a semicircle into ofs.
+<strong>save_state(std::ofstream&)</strong> is writing all LEFs as a semicircle into ofs.
 
 ### private
 
