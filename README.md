@@ -15,3 +15,9 @@ definition of the interface of the set of LEF.
 #### internal class LEF
 
 This class charactrize LEF. <strong>tau</strong> is dssociation constant. <strong>head*_progress</strong> is used to determine whether or not to move LEF head (if this veriable is more than 1, the head moves and the veriable go to 0).
+
+#### monomer_num
+determine the length of strand.
+
+#### is_occupied
+if LEF is at the strand index n, is_occupied[n] is true.
