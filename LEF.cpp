@@ -21,8 +21,8 @@ LEFs::LEFs(size_t arg_monomer_num,size_t arg_LEF_num,double arg_dt){
     for (size_t idx = 0; idx < monomer_num; idx++) {
         is_occupied[idx] = false;
     }
-    //to do aryランダム初期化
-    //いったん等間隔で初期化しておく
+    //TO DO  ary random initiation
+    //here, place LEFs at equal intervals in ary
     LEF_ary.resize(LEF_num);
     for (size_t idx = 0; idx < LEF_num; idx++) {
         LEF_ary[idx].head1_progress = 0;
