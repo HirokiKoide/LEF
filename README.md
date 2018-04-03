@@ -8,3 +8,5 @@ These codes are an implementation of "Chromosome Compaction by Active Loop Extus
 definition of the interface of the set of LEF.
 
 ### internal class LEF
+
+This class have three public member characteriaing LEF.<strong>average_velocity</strong>
