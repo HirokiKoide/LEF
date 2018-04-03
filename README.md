@@ -6,7 +6,8 @@ These codes are an implementation of "Chromosome Compaction by Active Loop Extus
 ## LEF.hpp
 
 ### public
-<strong>save_state(std::ofstream&)</strong> is writing all LEFs as a semicircle into ofs.
+#### save_state(std::ofstream&)
+write all LEFs as a semicircle into ofs.
 
 ### private
 
